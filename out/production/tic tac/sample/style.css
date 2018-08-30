@@ -1,0 +1,11 @@
+.button{
+    -fx-pref-width:80;
+    -fx-pref-height:80;
+    -fx-font-weight : bold;
+    -fx-text-fill: black ;
+    -fx-font-family:"Arial Narrow";
+    -fx-font-size:40;
+}
+.button:hover{
+  -fx-background-color:rgb(17, 186, 216);
+}
