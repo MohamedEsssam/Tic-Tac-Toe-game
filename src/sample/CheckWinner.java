@@ -2,6 +2,7 @@ package sample;
 
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -10,8 +11,7 @@ import java.util.Optional;
  * Created by Mohamed Essam on 8/30/2018.
  */
 public class CheckWinner {
-
-    void winner(ArrayList<Integer> player1, ArrayList<Integer> player2) {
+    void winner(ArrayList<Integer> player1, ArrayList<Integer> player2 ) {
         int winner = -1;
         if (player1.contains(1) && player1.contains(2) && player1.contains(3)) {
             winner = 1;
@@ -69,6 +69,9 @@ public class CheckWinner {
             if (winner == 2) {
                 msg = "player 2 win";
             }
+        if (winner==-1){
+                msg="players draw";
+        }
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setTitle("Game Info");
             alert.setHeaderText("Player Info");

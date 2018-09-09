@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * Created by Mohamed Essam on 8/30/2018.
  */
 public class Game {
-    CheckWinner winner=new CheckWinner();
+   CheckWinner winner=new CheckWinner();
    private ArrayList<Integer> player1 = new ArrayList<Integer>();
    private ArrayList<Integer> player2 = new ArrayList<Integer>();
    private boolean player = true;
