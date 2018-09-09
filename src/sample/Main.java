@@ -250,7 +250,7 @@ public class Main extends Application {
 
 
     void checkdraw(int winner,Scene scene ,Label label){
-        winner =-1;
+
         for (int i = 0; i <draw.size() ; i++) {
             System.out.println(draw.get(i));
         }
