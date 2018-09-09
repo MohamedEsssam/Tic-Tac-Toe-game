@@ -38,6 +38,7 @@ public class Main extends Application {
         GridPane pane1=new GridPane();
         Button start =new Button();
         start.setText("Start Game");
+        start.setStyle("-fx-background-color:GREY");
         pane1.setAlignment(Pos.CENTER);
         pane1.add(start,1,1);
         pane1.setStyle("-fx-background-color:#76EEE7");
@@ -59,7 +60,9 @@ public class Main extends Application {
         pane2.add(lable,1,4);
         pane2.add(label,2,4);
         pane2.setVgap(10);
+        pane2.setStyle("-fx-background-color:#76EEE7");
         Scene scene2=new Scene(pane2,400,400);
+
 
         close.setOnAction(event -> {
             window.close();
